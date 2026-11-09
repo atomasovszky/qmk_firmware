@@ -25,3 +25,6 @@
 	path = lib/lvgl
 	url = https://github.com/qmk/lvgl.git
 	branch = release/v8.2
+[submodule "users/crkbd-3x5_3-layout-qmk"]
+	path = users/crkbd-3x5_3-layout-qmk
+	url = git@github.com:atomasovszky/crkbd-3x5_3-layout-qmk.git
