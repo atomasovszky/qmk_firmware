@@ -468,8 +468,8 @@ format-and-pytest:
 	RUNTIME=docker ./util/docker_cmd.sh qmk pytest
 
 miryoku_left:
-	qmk flash -kb crkbd -km crkbd-3x5_3-layout-qmk -bl dfu-split-left -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_EXTRA=GRAPHITE -e MIRYOKU_CLIPBOARD=MAC -e MIRYOKU_KLUDGE_THUMBCOMBOS=yes
+	qmk flash -kb crkbd -km miryoku -bl dfu-split-left -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_EXTRA=GRAPHITE -e MIRYOKU_CLIPBOARD=MAC -e MIRYOKU_KLUDGE_THUMBCOMBOS=yes
 miryoku_right:
-	qmk flash -c -kb crkbd -km crkbd-3x5_3-layout-qmk -bl dfu-split-right -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_EXTRA=GRAPHITE -e MIRYOKU_CLIPBOARD=MAC -e MIRYOKU_NAV=INVERTEDT -e MIRYOKU_KLUDGE_THUMBCOMBOS=yes
+	qmk flash -c -kb crkbd -km miryoku -bl dfu-split-right -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_EXTRA=GRAPHITE -e MIRYOKU_CLIPBOARD=MAC -e MIRYOKU_NAV=INVERTEDT -e MIRYOKU_KLUDGE_THUMBCOMBOS=yes
 miryoku:
-	qmk compile -c -kb crkbd -km crkbd-3x5_3-layout-qmk -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_EXTRA=GRAPHITE -e MIRYOKU_CLIPBOARD=MAC -e MIRYOKU_NAV=INVERTEDT -e MIRYOKU_KLUDGE_THUMBCOMBOS=yes
+	qmk compile -c -kb crkbd -km miryoku -e MIRYOKU_ALPHAS=QWERTY -e MIRYOKU_EXTRA=GRAPHITE -e MIRYOKU_CLIPBOARD=MAC -e MIRYOKU_NAV=INVERTEDT -e MIRYOKU_KLUDGE_THUMBCOMBOS=yes
